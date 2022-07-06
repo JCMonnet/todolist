@@ -17,7 +17,11 @@
             </tr>
         </thead>
         <tbody>
+        {# Pour chaque tache dans la liste de toutes les taches #}
         {% for task in tasks %}
+        {# pour n'avoir que les tâches du user connecté #}
+        {# va voir dans la tables des tâches et toutes les tâches avec le même id User que le User connecté: Tu me les affiches. #}
+        {% if app.user.id == task.user.id %}     
             <tr>
                 <td>{{ task.id }}</td>
                 <td>{{ task.name }}</td>
@@ -25,10 +29,13 @@
                 <td>{{ task.date ? task.date|date('Y-m-d H:i:s') : '' }}</td>
                 <td>{{ task.category }}</td>
                 <td>
-                    <a href="{{ path('app_task_show', {'id': task.id}) }}">show</a>
-                    <a href="{{ path('app_task_edit', {'id': task.id}) }}">edit</a>
+                <a href="{{ path('app_task_show', {'id': task.id}) }}">show</a>
+                <a href="{{ path('app_task_edit', {'id': task.id}) }}">edit</a>
                 </td>
-            </tr>
+                </tr>
+
+        
+        {% endif %}
         {% else %}
             <tr>
                 <td colspan="6">no records found</td>
