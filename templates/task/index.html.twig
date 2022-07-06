@@ -3,10 +3,11 @@
 {% block title %}Task index{% endblock %}
 
 {% block body %}
-    <h1>Task index</h1>
-
+<section  style="background-color:#c9c9c9">
+    <h1 class="text-center" >Task index</h1>
+    <div class="w-75 p-3 m-auto" class="d-flex justify-content-center">
     <table class="table">
-        <thead>
+        <thead style="color:blue; background-color:grey">
             <tr>
                 <th>Id</th>
                 <th>Name</th>
@@ -16,13 +17,13 @@
                 <th>actions</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody >
         {# Pour chaque tache dans la liste de toutes les taches #}
         {% for task in tasks %}
         {# pour n'avoir que les tâches du user connecté #}
         {# va voir dans la tables des tâches et toutes les tâches avec le même id User que le User connecté: Tu me les affiches. #}
-        {% if app.user.id == task.user.id %}     
-            <tr>
+        {% if app.user.id == task.user.id %}
+            <tr style="background-color:black;color:white" class="w-75 p-3">
                 <td>{{ task.id }}</td>
                 <td>{{ task.name }}</td>
                 <td>{{ task.description }}</td>
@@ -31,10 +32,10 @@
                 <td>
                 <a href="{{ path('app_task_show', {'id': task.id}) }}">show</a>
                 <a href="{{ path('app_task_edit', {'id': task.id}) }}">edit</a>
+        {# Pour ajouter la suppression ici: On utilise un include qui va afficher/faire tout ce qui est dans le form de delete_form.html.twig  #}
+                {{ include('task/_delete_form.html.twig') }}
                 </td>
                 </tr>
-
-        
         {% endif %}
         {% else %}
             <tr>
@@ -43,6 +44,10 @@
         {% endfor %}
         </tbody>
     </table>
-
-    <a href="{{ path('app_task_new') }}">Create new</a>
+    <a class="fs-2" href="{{ path('app_task_new') }}">Create new task</a>
+    </div>
+    <div class="d-flex justify-content-center">
+    <img src="https://i2.wp.com/laboiteaunet.fr/wp-content/uploads/2019/10/bulletin-board-3233653_1920.jpg?fit=780%2C483&ssl=1">
+    </div>
+    </section>
 {% endblock %}
