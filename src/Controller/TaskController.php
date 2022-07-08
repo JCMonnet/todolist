@@ -12,7 +12,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 
 
-#[Route('/task')]
+#[Route('/{_locale<%app.supported_locales%>}/task')]
 class TaskController extends AbstractController
 {
     #[Route('/', name: 'app_task_index', methods: ['GET'])]

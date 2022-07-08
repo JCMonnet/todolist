@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="fr" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="9HqvGa0" resname="Welcome on to do list app!">
+        <source>Welcome on to do list app!</source>
+        <target>Bienvenue sur l'app to do list!</target>
+      </trans-unit>
+      <trans-unit id="uhGL9.y" resname="English">
+        <source>English</source>
+        <target>Anglais</target>
+      </trans-unit>
+      <trans-unit id="dFgZn_l" resname="French">
+        <source>French</source>
+        <target>Français</target>
+      </trans-unit>
+      <trans-unit id="wYmEDPf" resname="Log in">
+        <source>Log in</source>
+        <target>Se connecter</target>
+      </trans-unit>
+      <trans-unit id="acVpEs4" resname="You are logged in as">
+        <source>You are logged in as</source>
+        <target>Vous êtes connecté en tant que</target>
+      </trans-unit>
+      <trans-unit id="0FJ_Sz1" resname="Logout">
+        <source>Logout</source>
+        <target>Se deconnecter</target>
+      </trans-unit>
+      <trans-unit id="dDUw20Q" resname="Please sign in">
+        <source>Please sign in</source>
+        <target>Veuillez vous connecter</target>
+      </trans-unit>
+      <trans-unit id="588_9PF" resname="Password">
+        <source>Password</source>
+        <target>Mot de passe</target>
+      </trans-unit>
+      <trans-unit id="v9QCsvb" resname="Sign in">
+        <source>Sign in</source>
+        <target>Se connecter</target>
+      </trans-unit>
+      <trans-unit id="3aedWg4" resname="Edit Task">
+        <source>Edit Task</source>
+        <target>Modifier une tâche</target>
+      </trans-unit>
+      <trans-unit id="U0M9PNE" resname="back to list">
+        <source>back to list</source>
+        <target>revenir à la liste des tâches</target>
+      </trans-unit>
+      <trans-unit id="9f7V4nw" resname="Task index">
+        <source>Task index</source>
+        <target>Index des tâches</target>
+      </trans-unit>
+      <trans-unit id="KSwG8AR" resname="Category">
+        <source>Category</source>
+        <target>Categorie</target>
+      </trans-unit>
+      <trans-unit id="HGMzUJ3" resname="show">
+        <source>show</source>
+        <target>détails</target>
+      </trans-unit>
+      <trans-unit id="JiEhxTc" resname="edit">
+        <source>edit</source>
+        <target>modifier</target>
+      </trans-unit>
+      <trans-unit id="UTR1x7g" resname="Create new task">
+        <source>Create new task</source>
+        <target>Créer nouvelle tâche</target>
+      </trans-unit>
+      <trans-unit id="cY5YzCD" resname="New Task">
+        <source>New Task</source>
+        <target>Nouvelle tâche</target>
+      </trans-unit>
+      <trans-unit id="3NHVIj9" resname="Name">
+        <source>Name</source>
+        <target>Nom</target>
+      </trans-unit>
+      <trans-unit id="4tClSWj" resname="Delete">
+        <source>Delete</source>
+        <target>Supprimer</target>
+      </trans-unit>
+      <trans-unit id="4K3eWqf" resname="What would you like to?">
+        <source>What would you like to?</source>
+        <target>Que souhaitez vous?</target>
+      </trans-unit>
+      <trans-unit id="wa0ecFp" resname="log in to your account">
+        <source>log in to your account</source>
+        <target>vous connecter à votre compte</target>
+      </trans-unit>
+      <trans-unit id="isaTCA5" resname="manage your tasks">
+        <source>manage your tasks</source>
+        <target>gérer vos tâches</target>
+      </trans-unit>
+      <trans-unit id="Gy121Ee" resname="create an account">
+        <source>create an account</source>
+        <target>créer un compte</target>
+      </trans-unit>
+      <trans-unit id="5eyOAOR" resname="Account creation">
+        <source>Account creation</source>
+        <target>Création de compte</target>
+      </trans-unit>
+      <trans-unit id="nnCTSPW" resname="Create your account">
+        <source>Create your account</source>
+        <target>Créer votre compte</target>
+      </trans-unit>
+      <trans-unit id="u3I07BJ" resname="Register">
+        <source>Register</source>
+        <target>S'enregistrer</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,28 +1,27 @@
 {% extends 'base.html.twig' %}
 
-{% block title %} todolist!
+{% block title %}
+	todolist!
 {% endblock %}
 
 {% block body %}
 	<style>
 		.example-wrapper {
 			margin: 1em auto;
-			max-width: 800px;
-			width: 95%;
+			/* max-width: 800px;
+			width: 95%; */
 			font: 18px / 1.5 sans-serif;
-            background: grey;
+			background: grey;
 		}
 		.example-wrapper code {
-			background: grey;
 			padding: 2px 6px;
 		}
 	</style>
 
 	<div class="example-wrapper">
-		<h1>Welcome on to do list app</h1>
-        <h3 class="mt-5">what would you like to?</h3>
-		<a style="color:white" href="{{ path('app_login') }}">log in to your account</a><br>
-		<a style="color:white" href="{{ path('app_task_index') }}">manage your tasks</a><br>
-		<a style="color:white" href="{{ path('app_register') }}">create an account</a>
+		<h3 class="mt-5">{{ 'What would you like to?'|trans }}</h3>
+		<a style="color:white" href="{{ path('app_login') }}">{{ 'log in to your account'|trans }}</a><br>
+		<a style="color:white" href="{{ path('app_task_index') }}">{{ 'manage your tasks'|trans }}</a><br>
+		<a style="color:white" href="{{ path('app_register') }}">{{ 'create an account'|trans }}</a>
 	</div>
 {% endblock %}
