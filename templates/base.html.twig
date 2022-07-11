@@ -22,21 +22,11 @@
 	<body>
 
 		{% block header %}
-			<header class="d-flex flex-row justify-content-around">
-				<h1>{{ 'Welcome on to do list app!'|trans }}</h1>
-				<nav class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="dropdown-language" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						{{ app.request.locale|locale_name(app.request.locale)|u.title }}
-					</a>
-					<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-language">
-						<li>
-							<a class="dropdown-item" href="{{ path('app_home', {_locale: 'en'}) }}">{{ 'English'|trans }}</a>
-						</li>
-						<li>
-							<a class="dropdown-item" href="{{ path('app_home', {_locale: 'fr'}) }}">{{ 'French'|trans }}</a>
-						</li>
-					</ul>
-				</nav>
+			<header class="d-flex flex-row justify-content-around align-items-center">
+				<h1 class="text-capitalize fw-bold">{{ 'Welcome on to do list app!'|trans }}</h1>
+				<img style="width:10%; height:10%" src="https://www.lecadeau-ce.com/161465-tm_thickbox_default/stick-me-pense-bete-repositionnable-personnalisable.jpg">
+			 	<a href="{{ path('app_home') }}">{{ 'Home'|trans }}</a>
+				<a href="{{ path('app_logout') }}">{{ 'Logout'|trans }}</a>
 			</header>
 		{% endblock %}
 		{% block body %}{% endblock %}
